@@ -11,8 +11,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        widget.cpp
+        widget.cpp \
+    wavegenerate.cpp \
+    drawwavedia.cpp
 
-HEADERS  += widget.h
+HEADERS  += widget.h \
+    wavegenerate.h \
+    wavegenerate.h \
+    drawwavedia.h
 
-FORMS    += widget.ui
+FORMS    += widget.ui \
+    drawwavedia.ui

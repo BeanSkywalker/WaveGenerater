@@ -3,6 +3,8 @@
 
 #include <QWidget>
 
+#include "wavegenerate.h"
+
 namespace Ui {
 class Widget;
 }
@@ -15,8 +17,16 @@ public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
     
+private slots:
+    void on_comboBox_waveSelect_currentIndexChanged(int index);
+
+    void on_pushButton_drawWave_clicked();
+
 private:
     Ui::Widget *ui;
+    int generaterInit(void);
+
+    WaveGenerate* waveGen;
 };
 
 #endif // WIDGET_H
